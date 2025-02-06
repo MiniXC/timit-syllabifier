@@ -10,7 +10,7 @@ with open(os.path.join(pkg_root, 'requirements.txt'), 'r', encoding='utf-8') as 
     requirements = [r.strip() for r in f.readlines()]
 
 setuptools.setup(
-    name='syllabifier_timit',
+    name='syllabifier',
     version='0.0.1',
     description='syllabifier chunks your English ARPABET pronunciations into syllables',
     long_description=long_description,
