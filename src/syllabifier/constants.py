@@ -9,7 +9,7 @@ STOPS = set(['K', 'KCL', 'P', 'PCL', 'T', 'TCL', 'G', 'GCL', 'B', 'BCL', 'D', 'D
 FRICATIVES = set(['F', 'DH', 'HH', 'HV', 'S', 'SH', 'TH', 'V', 'Z', 'ZH'])
 AFFRICATES = set(['CH', 'JH'])
 NASALS = set(['M', 'N', 'NG'])
-APPROXIMANTS = set(['L', 'R', 'W', 'Y'])
+APPROXIMANTS = set(['L', 'R', 'AXR', 'W', 'Y'])
 CONSONANTS = STOPS.union(FRICATIVES).union(AFFRICATES).union(NASALS).union(APPROXIMANTS)
 
 S_EXTENDED_CODAS = set(['K', 'KCL', 'P', 'PCL', 'T', 'TCL', 'F', 'TH', 'D', 'DCL', 'DX', 'NG'])
@@ -25,4 +25,4 @@ PHONESET = set(['AA', 'AE', 'AH', 'AO', 'AW', 'AY', 'AX-H', 'AX', 'AXR', 'B', 'B
                 'TH', 'UH', 'UW', 'UX' 'V', 'W', 'Y', 'Z', 'ZH', 'Q'])
 
 # Optional stress markers (0,1,2) after the vowel for flexibility
-VOWELS_REGEX = re.compile(r'(?:AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UW|UH|IX|UX|AX|AXR)[012]?')
+VOWELS_REGEX = re.compile(r'(?:AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UW|UH|IX|UX|AX)[012]?')
